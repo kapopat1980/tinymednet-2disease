@@ -1,0 +1,8 @@
+[audit] written
+[TASK-DIA] repeated stratified CV {'n_splits': 5, 'n_repeats': 10}
+    repeat 1/10 done (83s)
+    repeat 2/10 done (156s)
+    repeat 3/10 done (238s)
+    repeat 4/10 done (314s)
+    repeat 5/10 done (396s)
+    repeat 6/10 done (474s)

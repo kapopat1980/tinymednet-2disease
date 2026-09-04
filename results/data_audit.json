@@ -1,0 +1,48 @@
+{
+  "synthetic_signatures": {
+    "n": 100000,
+    "hba1c_distinct_values": 18,
+    "glucose_distinct_values": 18,
+    "modal_bmi": 27.32,
+    "mean_bmi": 27.3207671,
+    "share_rows_at_modal_bmi": 0.25495,
+    "exact_duplicate_rows": 3854,
+    "min_age_years": 0.08,
+    "label_deterministic_outside_band": true,
+    "ambiguous_band": "(5.6, 6.6]",
+    "ambiguous_band_n": 58248,
+    "ambiguous_band_positive_rate": 0.07905850844664195
+  },
+  "pooled_leakage": {
+    "feature_availability_by_source": [
+      {
+        "source": "PIMA",
+        "n": 768,
+        "has_bp": true,
+        "has_hemoglobin": false,
+        "has_creatinine": false,
+        "has_bmi": true
+      },
+      {
+        "source": "Kaggle-DPD",
+        "n": 99982,
+        "has_bp": false,
+        "has_hemoglobin": false,
+        "has_creatinine": false,
+        "has_bmi": true
+      },
+      {
+        "source": "UCI-CKD",
+        "n": 400,
+        "has_bp": true,
+        "has_hemoglobin": true,
+        "has_creatinine": true,
+        "has_bmi": false
+      }
+    ],
+    "ckd_cases_all_from_uci": true,
+    "indicator_sensitivity": 1.0,
+    "indicator_specificity": 0.9985133795837463,
+    "note": "The indicator 'haemoglobin or creatinine recorded' is equivalent to 'row originated in UCI-CKD', which under the original label map is equivalent to 'CKD or UCI-CKD control'."
+  }
+}

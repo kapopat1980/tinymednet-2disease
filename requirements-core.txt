@@ -1,0 +1,12 @@
+# Core pipeline: everything except the TFLite export step.
+# Versions are those used for the reported results. If a pin does not resolve on
+# your Python version, drop the "==x.y.z" and install the latest; differences of
+# this kind move metrics in the third decimal, which is inside the tolerance
+# that src/check_expected.py allows.
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+torch==2.13.0
+xgboost==3.4.1
+matplotlib

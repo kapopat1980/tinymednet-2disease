@@ -1,0 +1,107 @@
+{
+  "controls": {
+    "baselines": [
+      {
+        "baseline": "Majority class",
+        "macro_f1": 0.31778092798348023,
+        "ckd_recall": 0.0,
+        "n_features": 0
+      },
+      {
+        "baseline": "Missingness indicators only",
+        "macro_f1": 0.5698630569639594,
+        "ckd_recall": 0.9719999999999999,
+        "n_features": 4
+      },
+      {
+        "baseline": "Source identity only",
+        "macro_f1": 0.5746654249074099,
+        "ckd_recall": 1.0,
+        "n_features": 1
+      },
+      {
+        "baseline": "Clinical values only (imputed)",
+        "macro_f1": 0.7189560217872615,
+        "ckd_recall": 0.476,
+        "n_features": 6
+      },
+      {
+        "baseline": "Clinical values + missingness",
+        "macro_f1": 0.7174592942329124,
+        "ckd_recall": 0.472,
+        "n_features": 10
+      }
+    ],
+    "n": 101150,
+    "indicator_rule": {
+      "rule": "haemoglobin or creatinine recorded",
+      "sensitivity": 0.976,
+      "specificity": 0.9985133795837463
+    }
+  },
+  "counts": [
+    {
+      "source": "PIMA Indians Diabetes",
+      "cls": "Diabetes",
+      "raw": 268,
+      "duplicates": 0,
+      "analysed": 268
+    },
+    {
+      "source": "PIMA Indians Diabetes",
+      "cls": "No diabetes",
+      "raw": 500,
+      "duplicates": 0,
+      "analysed": 500
+    },
+    {
+      "source": "PIMA Indians Diabetes",
+      "cls": "All",
+      "raw": 768,
+      "duplicates": 0,
+      "analysed": 768
+    },
+    {
+      "source": "Kaggle diabetes-prediction",
+      "cls": "Diabetes",
+      "raw": 8500,
+      "duplicates": 18,
+      "analysed": 8500
+    },
+    {
+      "source": "Kaggle diabetes-prediction",
+      "cls": "No diabetes",
+      "raw": 91482,
+      "duplicates": 3836,
+      "analysed": 91482
+    },
+    {
+      "source": "Kaggle diabetes-prediction",
+      "cls": "All",
+      "raw": 99982,
+      "duplicates": 3854,
+      "analysed": 99982
+    },
+    {
+      "source": "UCI Chronic Kidney Disease",
+      "cls": "CKD",
+      "raw": 250,
+      "duplicates": 0,
+      "analysed": 250
+    },
+    {
+      "source": "UCI Chronic Kidney Disease",
+      "cls": "No CKD",
+      "raw": 150,
+      "duplicates": 0,
+      "analysed": 150
+    },
+    {
+      "source": "UCI Chronic Kidney Disease",
+      "cls": "All",
+      "raw": 400,
+      "duplicates": 0,
+      "analysed": 400
+    }
+  ]
+}

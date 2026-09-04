@@ -1,0 +1,28 @@
+{
+  "task": "TASK-CKD",
+  "n_repeats": 10,
+  "n": 400,
+  "d": 24,
+  "epochs": 120,
+  "meta": {
+    "tinymednet_params": 3942,
+    "matched_mlp_params": 3947,
+    "matched_mlp_hidden": [
+      64,
+      35
+    ]
+  },
+  "seconds_total": 453.9,
+  "repeats": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

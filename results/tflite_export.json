@@ -1,0 +1,106 @@
+{
+  "TASK-DIA": {
+    "task": "TASK-DIA",
+    "keras_params": 4294,
+    "fp32": {
+      "f1_pos": 0.6107784431137725,
+      "f1_macro": 0.65561963630343,
+      "mcc": 0.352251753520878,
+      "auroc": 0.7445970149253732,
+      "auprc": 0.5532942156680617,
+      "bal_acc": 0.6845970149253731,
+      "brier": 0.27319180965423584,
+      "ece": 0.24209823428342742
+    },
+    "int8_tflite": {
+      "f1_pos": 0.6153846153846154,
+      "f1_macro": 0.6565295169946332,
+      "mcc": 0.35925002359869496,
+      "auroc": 0.7444776119402985,
+      "auprc": 0.5518713030356567,
+      "bal_acc": 0.6880597014925374,
+      "brier": 0.27761340141296387,
+      "ece": 0.25575763421754044
+    },
+    "argmax_agreement": 0.96875,
+    "deployment": {
+      "operators": [
+        "ADD",
+        "AVERAGE_POOL_2D",
+        "CONV_2D",
+        "DELEGATE",
+        "DEPTHWISE_CONV_2D",
+        "FULLY_CONNECTED",
+        "LOGISTIC",
+        "MUL",
+        "RESHAPE",
+        "SOFTMAX"
+      ],
+      "n_operators": 10,
+      "tensor_dtypes": {
+        "int8": 51,
+        "int32": 21
+      },
+      "float_tensors_remaining": 0,
+      "arena_lower_bound_bytes": 8656,
+      "file_bytes": 20056
+    },
+    "tflite_bytes_with_names": 32016,
+    "tflite_bytes_stripped": 20056,
+    "param_bytes_fp32": 17176,
+    "param_bytes_int8": 4294,
+    "n_test": 192
+  },
+  "TASK-CKD": {
+    "task": "TASK-CKD",
+    "keras_params": 4294,
+    "fp32": {
+      "f1_pos": 0.775,
+      "f1_macro": 0.4375,
+      "mcc": 0.18247610675957288,
+      "auroc": 0.9185059422750423,
+      "auprc": 0.9640549657315896,
+      "bal_acc": 0.5263157894736842,
+      "brier": 0.2587369680404663,
+      "ece": 0.2746210640668869
+    },
+    "int8_tflite": {
+      "f1_pos": 0.7701863354037267,
+      "f1_macro": 0.410734193342889,
+      "mcc": 0.1283767713722535,
+      "auroc": 0.9129881154499151,
+      "auprc": 0.9581869352127113,
+      "bal_acc": 0.5131578947368421,
+      "brier": 0.24989089369773865,
+      "ece": 0.26808593213558196
+    },
+    "argmax_agreement": 0.98,
+    "deployment": {
+      "operators": [
+        "ADD",
+        "AVERAGE_POOL_2D",
+        "CONV_2D",
+        "DELEGATE",
+        "DEPTHWISE_CONV_2D",
+        "FULLY_CONNECTED",
+        "LOGISTIC",
+        "MUL",
+        "RESHAPE",
+        "SOFTMAX"
+      ],
+      "n_operators": 10,
+      "tensor_dtypes": {
+        "int8": 51,
+        "int32": 21
+      },
+      "float_tensors_remaining": 0,
+      "arena_lower_bound_bytes": 15856,
+      "file_bytes": 20056
+    },
+    "tflite_bytes_with_names": 32096,
+    "tflite_bytes_stripped": 20056,
+    "param_bytes_fp32": 17176,
+    "param_bytes_int8": 4294,
+    "n_test": 100
+  }
+}

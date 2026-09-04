@@ -1,0 +1,7 @@
+# INT8 export step only (src/tflite_export.py).
+#
+# TensorFlow lags new Python releases by roughly a year and publishes no wheels
+# for Python 3.14 at the time of writing. If this will not install, create a
+# separate virtual environment on Python 3.11 or 3.12 for this one step; see
+# WINDOWS_SETUP.md. Every other result in the paper is reproducible without it.
+tensorflow-cpu==2.21.0

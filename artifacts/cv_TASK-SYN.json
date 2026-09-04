@@ -1,0 +1,28 @@
+{
+  "task": "TASK-SYN",
+  "n_repeats": 10,
+  "n": 5000,
+  "d": 7,
+  "epochs": 25,
+  "meta": {
+    "tinymednet_params": 3942,
+    "matched_mlp_params": 3928,
+    "matched_mlp_hidden": [
+      76,
+      42
+    ]
+  },
+  "seconds_total": 2194.5,
+  "repeats": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}
